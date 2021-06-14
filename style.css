@@ -1,0 +1,240 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style*/
+body{
+    background-image: url(./doodles.png);
+}
+.fixed{
+    position: fixed;
+    background-color: #2c5fd4;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 9999;
+}
+.fixed h5{
+    color: white;
+    margin: 7px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.container{
+    width: 1000px;
+    margin: 80px auto;
+    margin-bottom: 0;
+    position: relative;
+    box-sizing: border-box;;
+}
+h1{
+    position: absolute;
+    top: 240px;
+    left: 40px;
+    color: white;
+    font-size: 25px;
+    font-family: arial;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, .9);
+    cursor: default;
+}
+h1:hover{
+    color: white;
+    text-shadow: none;
+    background-color: #2c5fd4;
+}
+.ribbon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header{
+    background-color: white;
+}
+.header h4{
+    padding: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: arial;
+}
+.header ul{
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+.header ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: green;
+    padding: 4px;
+    font-family: arial;
+    font-size: 18px;
+}
+.header ul li a:hover{
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+}
+.hero{
+    height: 100px;
+}
+.hero{
+    background-image: url(./utsman-media-5Laj-zCGhWw-unsplash.jpg);
+    height: 300px;
+    background-position: 0 -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.conten{
+    background-color: white;
+}
+.main{
+    width: 700px;
+    box-sizing: border-box;
+    float: left;
+}
+.main h2{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-family: arial;
+}
+.main .penulis{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.main .penulis a{
+    text-decoration: none;
+    color: salmon;
+}
+.main p{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.main .isi{
+    margin-left: 50px;
+}
+.main .point{
+    font-weight: bold;
+}
+
+
+
+.sidebar{
+    float: right;
+    width: 270px;
+}
+.sidebar h3{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.sidebar img{
+    height: 70px;
+    float: left;
+    margin-right: 10px;
+}
+.sidebar p{
+    line-height: 20px;
+}
+
+
+.footer{
+    padding: 20px;
+    background-color: #4372e0;
+}
+.footer p{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
